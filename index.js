@@ -15,7 +15,7 @@ export default () => {
     const physics = usePhysics();
     const physicsIds = [];
     (async () => {
-        const u = `${baseUrl}/fan3.glb`;
+        const u = `${baseUrl}fan3.glb`;
         fan = await new Promise((accept, reject) => {
             const {gltfLoader} = useLoaders();
             gltfLoader.load(u, accept, function onprogress() {}, reject);
